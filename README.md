@@ -27,3 +27,14 @@ http://192.168.0.156:8086
 # install influx-cli
 echo "deb https://repos.influxdata.com/ubuntu focal stable" | sudo tee /etc/apt/sources.list.d/influxdb.list
 sudo apt-get install influxdb-client
+
+# prepare environment
+Scripts uses environment variables.
+- create an '.iot-env' file with:
+  ```
+  export DB_PASSWORD=<password>
+  export GRAFANA_USER=<uder>
+  export GRAFANA_PASSWORD=<password>
+  export IOT_HOST=<ip-address>
+  ```
+- execute ```source ./.iot-env```

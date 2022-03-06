@@ -1,2 +1,2 @@
-influx -host 192.168.0.156 -execute "SHOW DATABASES"
-influx -host 192.168.0.156 -execute "SHOW USERS"
+influx -host $IOT_HOST -execute "SHOW DATABASES"
+influx -host $IOT_HOST -execute "SHOW USERS"

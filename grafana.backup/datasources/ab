@@ -1,0 +1,1 @@
+{"id":2,"uid":"Ai98gAzgk","orgId":1,"name":"iot-mid-term","type":"influxdb","typeName":"InfluxDB","typeLogoUrl":"public/app/plugins/datasource/influxdb/img/influxdb_logo.svg","access":"proxy","url":"http://localhost:8086","password":"","user":"grafana","database":"iot_mid_term","basicAuth":false,"isDefault":false,"jsonData":{"httpMode":"POST"},"readOnly":false}

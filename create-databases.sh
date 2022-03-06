@@ -1,6 +1,6 @@
 # sets the retention of the power values to 5 minutes. Retention Job is running every 30 min !
 influx \
-    -host 192.168.0.156 \
+    -host $IOT_HOST \
     -execute  " \
         CREATE DATABASE iot_short_term WITH DURATION 1h REPLICATION 1 SHARD DURATION 1h NAME retention_1h; \
         CREATE DATABASE iot_mid_term WITH DURATION 60d REPLICATION 1 SHARD DURATION 60d NAME retention_60d; \

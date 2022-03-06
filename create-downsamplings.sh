@@ -19,7 +19,7 @@
 
 
 influx \
-    -host 192.168.0.156 \
+    -host $IOT_HOST \
     -execute  " \
     DROP CONTINUOUS QUERY electric_power_1min ON iot_mid_term; \
     CREATE CONTINUOUS QUERY electric_power_1min ON iot_mid_term BEGIN \
