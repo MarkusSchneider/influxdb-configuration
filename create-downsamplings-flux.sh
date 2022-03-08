@@ -19,7 +19,8 @@
 
 
 influx \
-    -host $IOT_HOST \
+    -host=$IOT_HOST \
+    -type=flux
     -execute  " \
     DROP CONTINUOUS QUERY electric_power_1h ON iot_mid_term; \
     CREATE CONTINUOUS QUERY electric_power_1h ON iot_mid_term BEGIN \

@@ -25,7 +25,7 @@ sudo systemctl enable grafana-server.service
 http://192.168.0.156:8086
 
 # install influx-cli
-echo "deb https://repos.influxdata.com/ubuntu focal stable" | sudo tee /etc/apt/sources.list.d/influxdb.list
+echo "deb https://repos.influxdata.com/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/influxdb.list
 sudo apt-get install influxdb-client
 
 # prepare environment
