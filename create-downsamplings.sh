@@ -1,5 +1,5 @@
 # create a continuous query to shift all measurements from database 'iot_short_term' with a measurment period of 1 Second
-# into the database 'iot_mid_term' wiht a measurement period of 1 Min.
+# into the database 'iot_mid_term' whit a measurement period of 1 Min.
 #
 # Continuous Query Syntax:
 # CREATE CONTINUOUS QUERY <cq_name> ON <database_name>
