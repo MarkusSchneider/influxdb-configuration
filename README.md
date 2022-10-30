@@ -38,3 +38,10 @@ Scripts uses environment variables.
   export IOT_HOST=<ip-address>
   ```
 - execute ```source ./.iot-env```
+
+# enable continuous query
+nano /etc/influxdb/influxdb.conf
+section [continuous_queries]
+- uncomment enabled = true
+- log-enabled = true
+- run-interval = "1s"
