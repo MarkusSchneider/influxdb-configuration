@@ -16,7 +16,7 @@ echo "deb https://repos.influxdata.com/debian $(lsb_release -cs) stable" | sudo 
 sudo apt-get update && sudo apt-get install -y influxdb \
 sudo service influxdb start
 
-# grafana installieren
+# grafana install
 wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add - \
 echo "deb https://packages.grafana.com/oss/deb stable main" | sudo tee -a /etc/apt/sources.list.d/grafana.list \
 sudo apt-get update && sudo apt-get install -y adduser libfontconfig1 grafana \
@@ -33,7 +33,7 @@ Scripts uses environment variables.
 - create an '.iot-env' file with:
   ```
   export DB_PASSWORD=<password>
-  export GRAFANA_USER=<uder>
+  export GRAFANA_USER=<user>
   export GRAFANA_PASSWORD=<password>
   export IOT_HOST=<ip-address>
   ```
