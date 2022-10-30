@@ -45,3 +45,12 @@ section [continuous_queries]
 - uncomment enabled = true
 - log-enabled = true
 - run-interval = "1s"
+
+# validate continuous query is running
+sudo journalctl -u influxdb.service | grep "continuous query"
+
+<code>
+Okt 30 09:01:00 HomeSrv influxd-systemd-start.sh[4083]: ts=2022-10-30T08:01:00.754528Z lvl=info msg="Executing continuous query" log_id=0dqzMtk0000 service=continuous_querier trace_id=0dqzNeKW000 op_name=continuous_querier_execute name=electric_power_1h_ext db_instance=iot_mid_term start=2022-10-30T07:01:00.000000Z end=2022-10-30T08:01:00.000000Z
+
+Okt 30 09:01:00 HomeSrv influxd-systemd-start.sh[4083]: ts=2022-10-30T08:01:00.771732Z lvl=info msg="Finished continuous query" log_id=0dqzMtk0000 service=continuous_querier trace_id=0dqzNeKW000 op_name=continuous_querier_execute name=electric_power_1h_ext db_instance=iot_mid_term written=1 start=2022-10-30T07:01:00.000000Z end=2022-10-30T08:01:00.000000Z duration=17ms
+</code>
